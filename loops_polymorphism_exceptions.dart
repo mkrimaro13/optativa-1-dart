@@ -34,7 +34,7 @@ void main() {
       // En dart no existe `DivideByZeroException`, se usa un error de argumento, ya que no se puede dividir por cero.
       throw new ArgumentError("No se puede dividir por cero");
     }
-    print("División: ${a! / b!}");
+    print("División: ${a / b}");
   // Se indica que en caso que salte esa excepción haga otra cosa.
   } on ArgumentError catch (e) {
     print("Error: ${e.message}");
